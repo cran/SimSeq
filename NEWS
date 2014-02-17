@@ -1,0 +1,71 @@
+1.0.0: 2014-02-17: SimSeq version 1.0.0
+	- Initial CRAN release
+
+0.5.2: 2014-02-17: SimSeq version 0.5.2
+	- Updated package namespace to export and import variables
+	- Changed depends to imports for edgeR and fdrtool
+	- Fixed treatment output in function SimData
+	- Removed algorithm from documentation for function SimData
+	- Removed samp.col from output for function SimData
+	- Changed treatment from 0 and 1 to non-tumor and tumor in kidney dataset
+
+0.5.1: 2013-09-28: SimSeq version 0.5.1
+	- fixed bug in samp.independent method in SimData function when samp.independent equal TRUE
+	- updated documentation
+
+0.5.0: 2013-09-14: SimSeq version 0.5.0
+	- changed name of "offset" input to "norm.factors" in all functions
+	- removed symmetric swapping functionally. As such n1.diff, n1.genes, and genes1.select are removed from all functions
+	- Updated Documentation
+	- Moved packages 'edgeR' and 'fdrtool's back to Depends field
+	- updated demo file
+
+0.4.0: 2013-09-07: SimSeq Version 0.4.0
+	- Changed version names of all files from 1.x.y to 0.x.y 
+	- removed pval.hist function
+	- now calculates weights for sampling genes by local fdr through fdrtool function from CRAN package 'fdrtool'
+	- changed name of EBP input in SimData function to weights
+	- updated examples for SimData
+	- updated documentation of functions
+	- removed package 'edgeR' from Depends field in description file
+	- added package 'edgeR' and 'fdrtool' to Suggests field in description file 
+
+0.3.0: 2013-08-29: SimSeq Version 0.3.0
+	- Moved wilcox signed rank and rank sum test out of SimData function to its own function, CalcPvalWilcox
+	- Changed default for offsets to calcNormFactors from package 'edgeR' using method "TMM"
+	- Created dependency on package 'edgeR'
+	- Changed independence swapping code (changed method for adjusting data by offsets, eliminated for-loops)
+	- Set samp.independent default to FALSE
+	- Minimal cleaning up of help/documentation files (still needs a bit of work)
+	- Created CalcPvalWilcox .Rd file
+
+0.2.0: 2013-08-24: SimSeq Version 0.2.0
+	- Substantially cleaned up code for readability and maintainability
+	- Added more detailed comments to code
+	- Renamed data.sim and sortdata functions to SimData and SortData respectively
+	- Added samp.genes functions
+	- Fixed errors in offset under the independent method section
+
+
+0.1.0: 2013-08-19: SimSeq Version 0.1.0
+	- Added symmetric swap functionality to data.sim function
+	- Added checks on initial parameters submitted to data.sim function
+	- help files are no longer working
+
+
+0.0.0: 2013-08-17: SimSeq Version 0.0.0
+	- Created sortdata, samp.col, and data.sim functions
+	- sortdata: sorts matrix of gene express. data given vector of replicates and treatment
+	- samp.col: samples replicates by columns separately and independently
+	- data.sim: Now has functionality to simulate under both standard and independent method for both paired and unpaired data			
+  
+
+
+
+
+
+
+
+
+
+
