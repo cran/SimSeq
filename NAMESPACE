@@ -1,3 +1,2 @@
 export(CalcPvalWilcox, SimData, SortData)
-importFrom(edgeR, calcNormFactors)
 importFrom(fdrtool, fdrtool)
