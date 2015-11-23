@@ -39,13 +39,13 @@ data(kidney)
 ### Source code used to assemble KIRC dataset
 
 ### load in SimSeq package for sorting counts matrix
-require(SimSeq)
+library(SimSeq)
 
 ### htmlToText function used to scrape barcode data from uuid
 htmlToText <- function(input, ...) {
   ###---PACKAGES ---###
-  require(RCurl)
-  require(XML) 
+  library(RCurl)
+  library(XML) 
   
   ###--- LOCAL FUNCTIONS ---###
   # Determine how to grab html for a single input element

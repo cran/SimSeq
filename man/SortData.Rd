@@ -37,5 +37,5 @@ List containing:
 \item{sorting}{sorting vector used to sort and trim.}
 }
 \author{
-Samuel Benidt <sbenidt@iastate.edu>
+Samuel Benidt <sgbenidt@gmail.com>
 }

@@ -6,7 +6,9 @@ citEntry(
    author = "Benidt, Sam and Nettleton, Dan",
    journal = "Bioinformatics",
    year = 2015,
-   textVersion = "Benidt, S., and Nettleton, D. (2015). SimSeq: a nonparametric approach to simulation of RNA-sequence datasets. Bioinformatics. doi: 10.1093/bioinformatics/btv124."
+   volume = 31,
+   pages = 2131-2140,
+   textVersion = "Benidt, S., and Nettleton, D. (2015). SimSeq: a nonparametric approach to simulation of RNA-sequence datasets. Bioinformatics. 31, 2131-2140."
 )
 
 citEntry(

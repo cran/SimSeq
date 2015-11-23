@@ -1,2 +1,4 @@
 export(CalcPvalWilcox, SimData, SortData)
-importFrom(fdrtool, fdrtool)
+importFrom("stats", "quantile", "wilcox.test")
+
+importFrom("fdrtool", "fdrtool")

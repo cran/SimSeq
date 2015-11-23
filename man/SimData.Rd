@@ -36,7 +36,7 @@ The number of genes simulated to be differentially expressed. Must be less than 
 A positive numeric vector of multiplicative normalization factors for each column of the counts matrix.  Will default to CalcNormFactors function from the package edgeR with method = "TMM".
 }
   \item{samp.independent}{
-A logical vector specifying whether the columns sampled for each gene should sampled separately and independently for each gene. Defaults to FALSE.
+  Should columns be resampled for each gene. (Defaults to FALSE - setting to TRUE is not recommended.)
 }
   \item{genes.select}{
 A vector specifying genes to be subsetted from the counts matrix in the simulation. Can be either a logical vector or a numeric vector indicating the rows of the counts matrix to be used. Optional if n.genes is specified.
@@ -76,11 +76,11 @@ SimData simulates an RNA-seq matrix of counts from a large source RNA-sequence d
 }
 
 \author{
-Samuel Benidt <sbenidt@iastate.edu>
+Samuel Benidt <sgbenidt@gmail.com>
 }
 
 \source{
-Benidt, S., and Nettleton, D. (2015). SimSeq: a nonparametric approach to simulation of RNA-sequence datasets. Bioinformatics. doi: 10.1093/bioinformatics/btv124. 
+Benidt, S., and Nettleton, D. (2015). SimSeq: a nonparametric approach to simulation of RNA-sequence datasets. Bioinformatics. 31, 2131-2140.
 
 The Cancer Genome Atlas Research Network (2013). Comprehensive molecular characterization of clear cell renal cell carcinoma. Nature, 499(7456), 43-49.
 
@@ -95,7 +95,7 @@ treatment <- kidney$treatment # Treatment vector indicating Non-Tumor or Tumor c
 
 nf <- apply(counts, 2, quantile, 0.75)
 
-require(fdrtool)
+library(fdrtool)
 
 \dontrun{
 
@@ -208,7 +208,7 @@ nf <- apply(counts, 2, quantile, 0.75)
 samp.rows <- sample(1:nrow(counts), 1500)
 counts <- counts[samp.rows, ]
 
-require(fdrtool)
+library(fdrtool)
 data.sim <- SimData(counts = counts, replic = replic, treatment = treatment, 
                     sort.method = "paired", k.ind = 5, n.genes = 500, n.diff = 100,
                     norm.factors = nf)

@@ -37,5 +37,5 @@ Specifies whether an exact signed rank test (paired) or exact ranksum test (unpa
 probs: a vector of p-values of differential expression for each gene.
 }
 \author{
-Samuel Benidt <sbenidt@iastate.edu>
+Samuel Benidt <sgbenidt@gmail.com>
 }
